@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="500" viewbox="0 0 750 500">
+<rect width="750" height="500" fill="#ffffff" rx="30" ry="30"/>
+
+<rect width="100" height="290" x="150" y="150" rx="10" fill="#579ad5"/>
+
+<polyline points="340,60 300,120 500,120 460,60 340,60" fill="#579ad5" stroke-linejoin="round" stroke-linecap="round" stroke="#579ad5" stroke-width="8"/>
+
+<circle cx="400" cy="300" r="150" 
+fill="#ffffff" stroke="#ffffff" stroke-width="78"/>
+
+<circle cx="400" cy="300" r="160" 
+fill="#ffffff" stroke="#579ad5" stroke-width="20"/>
+
+<circle cx="410" cy="300" r="159" 
+fill="none" stroke="#ffffff" stroke-width="10"/>
+
+<rect width="50" height="200" x="300" y="200"  fill="#579ad5"/>
+<polygon points="325,300 290,400 360,400" fill="#579ad5" />
+<polygon points="325,250 290,200 320,200" fill="#579ad5" />
+
+<polygon points="349,250 350,200 400,300 380,300" fill="#579ad5" />
+<polygon points="436,250 435,200 380,300 400,300" fill="#579ad5"/>
+
+<rect width="50" height="200" x="435" y="200"  fill="#579ad5"/>
+<polygon points="460,300 425,400 495,400" fill="#579ad5" />
+<polygon points="460,250 435,200 495,200" fill="#579ad5" />
+
+<ellipse cx="400" cy="320" rx="100" ry="105" fill="rgba(87,154,213,0.162)" />
+
+</svg>

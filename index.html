@@ -1,120 +1,150 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="fr" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Feunteun Mathéo</title>
+    <title>Portfolio de Feunteun Mathéo</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="./css.css">
-
-
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
 
-    <nav class="navbar py-3 px-4 mx-6" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbar-main" class="navbar-menu">
-            <div class="navbar-start">
-                <img class="image is-64x64" src="./img/keos.png" alt="Mon logo">
-            </div>
-
-            <div class="navbar-end">
-                <a class="navbar-item is-size-5" href="index.html#a_propos">
-                    À propos
-                </a>
-
-                <a class="navbar-item is-size-5" href="index.html#competences">
-                    Compétences
-                </a>
-
-                <a class="navbar-item is-size-5" href="index.html#projets">
-                    Mes projets
-                </a>
-                <a class="navbar-item is-size-5" href="index.html#parcours">
-                    Mon parcours
-                </a>
-                <a class="navbar-item is-size-5" href="index.html#contact">
-                    Contact
+    <header class="header">
+        <nav class="navbar py-1 px-6" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-start" href="index.html#header">
+                    <img class="image taille_image" src="./media/image/mon_logo.svg" alt="Mon logo">
                 </a>
             </div>
-        </div>
-    </nav>
 
+            <!-- Menu burger custom pour mobile -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Activer le menu" aria-expanded="false">
+                <span class="hamburger-line line1"></span>
+                <span class="hamburger-line line2"></span>
+                <span class="hamburger-line line3"></span>
+            </button>
 
-    <section class="hero is-medium is-bold has-background">
-        <img class="hero-background" src="./img/fond_hero.png" alt="background" style="height: 100vh;">
-        <div class="hero-body" style="display: flex; align-items: flex-end; padding-bottom: 0;">
-            <figure class="image" style="max-width: 30%; max-height: 80vh; margin: 0; flex-shrink: 0;">
-                <img src="./img/photo_profil.png" alt="photo de profil">
-            </figure>
-            <div class="hero-body is-overlay columns">
-                <div class="column is-3"></div>
-                <div class="container column is-6">
-                    <h1 class="title has-text-white tres_gros_text">Mathéo Feunteun</h1>
-                    <h2 class="subtitle has-text-white">Bienvenue sur mon site</h2>
+            <!-- Menu desktop -->
+            <div id="navbar-main" class="navbar-menu navbar-desktop">
+                <div class="navbar-end">
+                    <a class="navbar-item is-size-5" href="index.html#a_propos">
+                        À propos
+                    </a>
+
+                    <a class="navbar-item is-size-5" href="index.html#competences">
+                        Compétences
+                    </a>
+
+                    <a class="navbar-item is-size-5" href="index.html#projets">
+                        Mes projets
+                    </a>
+                    <a class="navbar-item is-size-5" href="index.html#parcours">
+                        Mon parcours
+                    </a>
+                    <a class="navbar-item is-size-5" href="index.html#contact">
+                        Contact
+                    </a>
                 </div>
             </div>
+
+            <!-- Menu mobile (overlay) -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <div class="mobile-menu-content">
+                    <nav class="mobile-nav">
+                        <a class="mobile-nav-link" href="index.html#a_propos">À propos</a>
+                        <a class="mobile-nav-link" href="index.html#competences">Compétences</a>
+                        <a class="mobile-nav-link" href="index.html#projets">Mes projets</a>
+                        <a class="mobile-nav-link" href="index.html#parcours">Mon parcours</a>
+                        <a class="mobile-nav-link" href="index.html#contact">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero is-medium is-bold has-background hero-responsive"  id="header">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./media/image/fond_hero_vertical.avif">
+            <img class="hero-background hero-image" src="./media/image/fond_hero.avif" alt="background"
+                style="height: 100vh;">
+        </picture>
+        <div class="hero-body hero-body-responsive" style="display: flex; align-items: flex-end; padding-bottom: 0;">
+            <div class="hero-body is-overlay columns">
+                <div class="column is-3"></div>
+                <div class="container column is-7">
+                    <h1 class="title has-text-white tres_gros_text typo_titre">MATHÉO FEUNTEUN</h1>
+                    <h2 class="subtitle has-text-white typo_texte ombre">Je suis un étudiant en BUT Métiers du
+                        Multimédia et de l'Internet à Lannion. <br>
+                        Je recherche une alternance dans les métiers de l'audiovisuel pour septembre 2026. <br>
+                        Je suis passionné d'audiovisuel et de surf, bienvenue dans mon portfolio !</h2>
+                </div>
+            </div>
+            <figure class="image hero-profile" style="max-width: 30%; max-height: 80vh; margin: 0; flex-shrink: 0;">
+                <img src="./media/image/photo_profil.png" alt="photo de profil">
+            </figure>
         </div>
     </section>
 
 
 
-    <section class="px-4 mx-6 my-6 columns mb-4" id="a_propos">
+    <section class="px-4 mx-2 my-6 columns mb-4" id="a_propos">
         <div class="column is-1"></div>
         <div class="column ">
-            <div class="title m-4 ">À propos</div>
+            <div class="title m-4 typo_titre">À propos</div>
             <div class="columns">
                 <div class="column is-10">
-                    <p class="subtitle m-4">Hey, moi c’est Mathéo ! <br> <br>
+                    <p class="subtitle m-4 typo_texte">Hey, moi c'est <strong>Mathéo</strong> ! <br> <br>
 
-                        J’aime ce qui me fait peur. Passionné de surf, je suis terrorisé quand les vagues dépassent ma
-                        taille. Mais… c'est exactement ce qui me pousse à continuer. <br><br>
+                        J’aime ce qui me fait peur. Passionné de <strong>surf</strong>, je suis terrorisé
+                        quand les vagues dépassent ma
+                        taille. Mais… c'est exactement ce qui me <strong>pousse à continuer.</strong>
+                        <br><br>
 
-                        Je suis un aventurier qui aime découvrir de nouveaux lieux à capturer en photo ! J’ai soif de
-                        découvrir les histoires des gens que je rencontre. C'est cette soif qui m’a mené vers
-                        l’audiovisuel
-                        et l'entrepreneuriat, notamment à travers le programme Fabrik ta pépite. <br><br>
+                        Je suis un <strong>aventurier</strong> qui aime découvrir de nouveaux lieux à
+                        capturer en <strong>photo</strong> ! J'ai soif de
+                        découvrir les <strong>histoires des gens</strong> que je rencontre. C'est cette soif
+                        qui m'a mené vers
+                        <strong>l'audiovisuel</strong>
+                        et <strong>l'entrepreneuriat</strong>, notamment à travers le programme Fabrik ta
+                        pépite. <br><br>
 
-                        Je suis actuellement en BUT MMI (Métiers du Multimédia et de l’Internet) pour perfectionner mes
+                        Je suis actuellement en <strong>BUT MMI</strong> (Métiers du Multimédia et de
+                        l’Internet) pour perfectionner mes
                         compétences. En parallèle, j'ai une solide expérience en audiovisuel. <br><br>
 
-                        Si je devais me décrire, je dirais que je suis quelqu’un de confiant, ouvert d’esprit, curieux
+                        Si je devais me décrire, je dirais que je suis quelqu'un de <strong>confiant,
+                            ouvert d'esprit, curieux</strong>
                         et
-                        doté d’une réelle intelligence émotionnelle. On dit aussi de moi que je suis force de
-                        proposition et
-                        toujours motivé ! <br><br>
+                        doté d'une réelle <strong>intelligence émotionnelle</strong>. On dit aussi de moi que
+                        je suis <strong>force de
+                            proposition</strong> et
+                        toujours <strong>motivé !</strong> <br><br>
 
-                        Plongez dans mes différents projets ! Et préparez-vous à vous en prendre plein les yeux… Ça vous
-                        rappellera les vagues. </p>
+                        <strong>Plongez</strong> dans mes différents <strong>projets !</strong> Et
+                        préparez-vous à vous en prendre <strong>plein les yeux</strong>… Ça vous
+                        rappellera les <strong>vagues</strong>.
+                    </p>
                 </div>
                 <div class="column is-flex 
                         is-flex-direction-column 
                         is-justify-content-flex-end 
                         
                         is-align-items-start">
-                    <a class="button is-primary is-outlined is-rounded is-medium"
-                        href="./img/1A2-Feunteun Matheo - CV VF.pdf" target="_blank">
-                        <span class="icon">
-                            <i class="fas fa-download"></i>
+                    <a class="btn-cv" href="./media/Feunteun_Mathéo_CV.pdf" target="_blank">
+                        <span class="btn-icon">
+                            <i class="fas fa-download" style="font-size:0.75rem;"></i>
                         </span>
-                        <span>Mon CV</span>
-
+                        <span>mon CV</span>
                     </a>
                 </div>
+                 
             </div>
         </div>
 
@@ -123,17 +153,25 @@
 
 
     <section class="hero is-medium has-background" id="competences">
-        <img class="hero-background" src="./img/_DSF5370.jpg" alt="background">
+        <img class="hero-background" src="./media/image/_DSF5370.avif" alt="background">
         <div class="hero-body" style="background: rgba(0,0,0,0.45);">
             <div class="container">
-                <h2 class="title is-2 has-text-white mb-6">Mes compétences</h2>
+                <h2 class="title is-2 has-text-white mb-6 typo_titre">Mes compétences</h2>
 
                 <div class="columns is-multiline">
 
                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
-                        <div class="box">
-                            <h5 class="title is-4">Audiovisuelle</h5>
-                            <div class="content has-text-centered">
+                        <div class="box opaciter">
+                            <div class="card-header-skill">
+                                <h4 class="title is-4 typo_titre">Audiovisuel</h4>
+
+                                <div class="skill-logos">
+                                    <img src="./style/assets/ui/DaVinci_Resolve.png" alt="DaVinci Resolve"
+                                        title="DaVinci Resolve">
+
+                                </div>
+                            </div>
+                            <div class="content has-text-centered typo_texte">
                                 <ul style="list-style: none; margin-left: 0;">
                                     <li>Direction des acteurs</li>
                                     <li>Composition</li>
@@ -144,9 +182,17 @@
                     </div>
 
                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
-                        <div class="box">
-                            <h5 class="title is-4">Marketing</h5>
-                            <div class="content has-text-centered">
+                        <div class="box opaciter">
+                            <div class="card-header-skill">
+                                <h4 class="title is-4 typo_titre">Marketing</h4>
+                                <div class="skill-logos">
+                                    <img src="./style/assets/ui/google-analytics.svg" alt="Google Analytics"
+                                        title="Google Analytics">
+                                    <img src="./style/assets/ui/Notion.svg" alt="Notion" title="Notion">
+
+                                </div>
+                            </div>
+                            <div class="content has-text-centered typo_texte">
                                 <ul style="list-style: none; margin-left: 0;">
                                     <li>Auditer un site ou une communication numérique</li>
                                     <li>Concevoir un produit ou un service fonctionnel</li>
@@ -156,11 +202,17 @@
                         </div>
                     </div>
 
+
                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
-                        <div class="box">
-                            <h5 class="title is-4">Entrepreneuriat</h5>
-                            
-                            <div class="content has-text-centered">
+                        <div class="box opaciter">
+                            <div class="card-header-skill">
+                                <h4 class="title is-4 typo_titre">Entrepreneuriat</h4>
+                                <div class="skill-logos">
+                                    <img src="./style/assets/ui/Notion.svg" alt="Notion" title="Notion">
+                                    <img src="./style/assets/ui/Canva.svg" alt="Canva" title="Canva">
+                                </div>
+                            </div>
+                            <div class="content has-text-centered typo_texte">
                                 <ul style="list-style: none; margin-left: 0;">
                                     <li>Entreprendre et gérer un projet</li>
                                     <li>Business Plan</li>
@@ -171,25 +223,44 @@
                         </div>
                     </div>
 
+
                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
-                        <div class="box">
-                            <h5 class="title is-4">Développement web</h5>
-                            
-                            <div class="content has-text-centered">
+                        <div class="box opaciter">
+                            <div class="card-header-skill">
+                                <h4 class="title is-4 typo_titre">Développement web</h4>
+                                <div class="skill-logos">
+                                    <img src="./style/assets/ui/html.svg" alt="HTML5" title="HTML5">
+                                    <img src="./style/assets/ui/css.svg" alt="CSS3" title="CSS3">
+                                    <img src="./style/assets/ui/javascript.svg" alt="JavaScript" title="JavaScript">
+                                    <img src="./style/assets/ui/VScode.svg" alt="VS Code" title="VS Code">
+
+                                </div>
+                            </div>
+                            <div class="content has-text-centered typo_texte">
                                 <ul style="list-style: none; margin-left: 0;">
                                     <li>Conception de wireframe et maquettes</li>
-                                    <li>Développement de sites web en HTML, CSS et Javascript avec le framework Bulma</li>
+                                    <li>Développement de sites web en HTML, CSS et Javascript avec le framework Bulma
+                                    </li>
                                     <li>Déploiement sur un serveur</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
+
                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
-                        <div class="box">
-                            <h5 class="title is-4">Photographie</h5>
-                            
-                            <div class="content has-text-centered">
+                        <div class="box opaciter">
+                            <div class="card-header-skill">
+                                <h4 class="title is-4 typo_titre">Photographie</h4>
+                                <div class="skill-logos">
+                                    <img src="./style/assets/ui/Lightroom.png" alt="Adobe Lightroom"
+                                        title="Adobe Lightroom">
+                                    <img src="./style/assets/ui/Photoshop.svg" alt="Adobe Photoshop"
+                                        title="Adobe Photoshop">
+
+                                </div>
+                            </div>
+                            <div class="content has-text-centered typo_texte">
                                 <ul style="list-style: none; margin-left: 0;">
                                     <li>Prise de vue</li>
                                     <li>Diriger des modèles</li>
@@ -199,11 +270,20 @@
                         </div>
                     </div>
 
+
                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
-                        <div class="box">
-                            <h5 class="title is-4">Graphisme</h5>
-                            
-                            <div class="content has-text-centered">
+                        <div class="box opaciter">
+                            <div class="card-header-skill">
+                                <h4 class="title is-4 typo_titre">Graphisme</h4>
+                                <div class="skill-logos">
+                                    <img src="./style/assets/ui/illustrator.svg" alt="Adobe Illustrator"
+                                        title="Adobe Illustrator">
+                                    <img src="./style/assets/ui/figma.svg" alt="Figma" title="Figma">
+                                    <img src="./style/assets/ui/canva.svg" alt="Canva" title="Canva">
+                                    <img src="./style/assets/ui/Affinity.svg" alt="Affinity">
+                                </div>
+                            </div>
+                            <div class="content has-text-centered typo_texte">
                                 <ul style="list-style: none; margin-left: 0;">
                                     <li>Identité visuelle</li>
                                     <li>Mise en page et hiérarchie de l'information</li>
@@ -212,6 +292,7 @@
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
@@ -223,11 +304,13 @@
 
     <section class="box" id="projets">
         <div class="column is-10 is-offset-1">
-            <div class="title m-4 is-size-2 is-offset-1">Mes projets</div>
+            <div class="title m-4 is-size-2 is-offset-1 typo_titre">Mes projets</div>
         </div>
-        <div class="columns is-multiline">
+        <div class="columns is-multiline is-centered">
 
-            <div class="column is-5 is-offset-1 pt-5 pr-6">
+
+
+            <div class="column is-5  pt-5 pr-6 typo_texte">
                 <div class="iframe-container">
                     <iframe class="responsive-iframe"
                         src="https://www.youtube.com/embed/BNDwayE_Pic?si=xzPj2WKVkhWbZEL9" title="YouTube video player"
@@ -236,97 +319,29 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
-                <h4 class="title is-size-2 mt-4">Réalisation d’un court-métrage : Le Pont du diable</h4>
-                <h5 class="subtitle mb-3">Au lycée, dans le cadre de la spécialité Cinéma Audiovisuel, en équipe de 3,
-                    J’ai écrit, tourné et monté un court métrage de 10 minutes sur le thème d’une légende urbaine… “Le
-                    Pont du Diable”
-                </h5>
+                <h4 class="title is-size-2 mt-4 typo_titre">Réalisation d’un court-métrage : Le Pont du diable</h4>
 
-                <div class="tags are-small mb-3">
-                    <span class="tag is-rounded">Audiovisuelle</span>
-                </div>
-
-                <div class="subtitle">Démarche</div>
-                <p class="is-size-6 ">
-                    Écriture
-                    Tournage
-                    Montage
-                    Présenté au cinéma
-
-                </p>
-                <div class="subtitle m-3">Compétence</div>
-                <p class="is-size-6 ">
-                    Travail en équipe
-                    Écriture :
-                    Rédaction d’un pitch, d’un synopsis, d’un script et création du découpage technique
-                    Tournage :
-                    Gestion d’un tournage, prise de vue et de son, direction des acteurs
-                    Montage :
-                    Montage, mixage sons, étalonnage
-
-
-                </p>
-                <div class="subtitle m-3">Bilan</div>
-                <p class="mb-5">
-                    “Le Pont du Diable” m’a profondément marqué, après 1 an à travailler dessus, c’est le projet dont je
-                    suis le plus fier. Et c’est grâce à lui que j’ai envie de travailler dans les métiers de
-                    l'audiovisuel ! J'ai développé mes compétences en audiovisuelles et en travail d'équipe.
-
-                </p>
+                <button class="btn-voir-plus" onclick="openModal(0)"><span class="btn-icon"><i class="fas fa-arrow-right"></i></span><span class="btn-label">Voir plus</span></button>
             </div>
 
-            <div class="column is-5 pt-5 pl-6">
-                <figure class="image is-3by2 my-4">
-                    <img src="./img/keos.png">
-                </figure>
 
-                <h4 class="title is-size-2">Le Coffret Rider</h4>
-                <h5 class="subtitle mb-3">Dans le cadre d’une formation proposée par Pépite Bretagne. Fabrik ta pépite
-                    nous encourage et nous accompagne dans la réalisation d’un projet entrepreneurial en groupe de 3.
-                    Mon idée : une boîte à clés pour ranger les cartes électroniques de voiture directement accroché à
-                    la roue pour les surfeurs.
-                </h5>
 
-                <div class="tags are-small mb-3">
-                    <span class="tag is-rounded">Entrepreneurial</span>
-                    <span class="tag is-rounded">Audiovisuelle</span>
+            <div class="column is-5 pt-5 pl-6 responsive-padding">
+                <div class="iframe-container">
+                    <iframe class="responsive-iframe"
+                        src="https://www.youtube.com/embed/LdqSVCIPrcc?si=C8cd9MvCF4M9OiFh" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
-                <div class="subtitle">Démarche</div>
-                <p class="is-size-6 ">
-                    L’idée : une boite à clé qui bloque les ondes des cartes de voiture électrique
-                    Est ce qu’elle répond à un problème réel ?
-                    La cible : Le surfeur / Le pratiquant d’activité nautique
-                    Enquête terrain
-                    Prototypage
-                    Positionnement de l’offre
-                    Business plan
-                    Réalisation d’un court-métrage promotionnel
-
-                </p>
-                <div class="subtitle m-3">Compétence</div>
-                <p class="is-size-6 ">
-                    Entreprendre et gérer un projet
-                    Concevoir un produit fonctionnel.
-                    Réaliser une enquête terrain.
-                    Positionner notre offre.
-                    Compétence oratoire, capacité à vendre et à pitcher son produit
-
-
-
-                </p>
-                <div class="subtitle m-3">Bilan</div>
-                <p class="mb-5">
-                    À la base, j’avais juste envie de participer à une formation sur l'entrepreneuriat, mais je n’aurais
-                    pas pensé m’investir autant dans le projet. Sans doute parce que c’est moi qui ai eu l’idée de
-                    départ. Mais surtout car notre idée répondait à un problème réel. Mes premiers pas dans le monde de
-                    l'entrepreneuriat furent très enrichissants.
-
-
-                </p>
+                <h4 class="title is-size-2 typo_titre mt-4">Le Coffret Rider</h4>
+                <button class="btn-voir-plus" onclick="openModal(1)"><span class="btn-icon"><i class="fas fa-arrow-right"></i></span><span class="btn-label">Voir plus</span></button>
             </div>
 
-            <div class="column is-5 is-offset-1 pt-5 pr-6">
+
+
+            <div class="column is-5 pt-5 pr-6 responsive-padding typo_texte">
 
                 <div class="iframe-container">
                     <iframe class="responsive-iframe"
@@ -335,81 +350,79 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <h4 class="title is-size-2">Réalisation d’un court-métrage : “Bref, j’ai passé un entretien”</h4>
-                <h5 class="subtitle mb-3">En équipe de quatre, en décembre 2025, nous avons réalisé un court-métrage de
-                    sensibilisation sur les disparités hommes/femmes au travail.</h5>
+                <h4 class="title is-size-2 typo_titre mt-4">Réalisation d’un court-métrage : “Bref, j’ai passé un
+                    entretien”</h4>
 
-                <div class="tags are-small mb-3">
-                    <span class="tag is-rounded">Audiovisuelle</span>
-                </div>
-
-                <div class="subtitle">Démarche</div>
-                <p class="is-size-6 ">
-                    Création d’un dossier de production complet, du synopsis à la note d’intention <br>
-                    Repérage et préparation du tournage<br>
-                    Tournage : j’avais le rôle d'ingénieur du son.<br>
-                    Un montage peu complexe car on était limité en temps.
-
-                </p>
-                <div class="subtitle m-3">Compétence</div>
-                <p class="is-size-6 ">
-                    Tournage :
-                    Gestion d’un tournage, prise de vue et de son, direction des acteurs<br>
-                    Montage :
-                    Montage, mixage sons, étalonnage
-
-                </p>
-                <div class="subtitle m-3">Bilan</div>
-                <p class="mb-6">
-                    Ce projet audiovisuel a été pour moi un peu différent car je me suis joint en cours de route au
-                    projet. Je me suis intégrée au projet, j’ai compris les idées des réalisatrices. Je pourrais me
-                    considérer comme ingénieur du son dans une grosse production, qui n’a pas été présente lors de
-                    l'écriture mais qui doit comprendre les intentions du réalisateur pour réussir au mieux son travail.
-                    Ce projet a développé mes compétences en prise de sons et en montage.
-
-                </p>
-
+                <button class="btn-voir-plus" onclick="openModal(2)"><span class="btn-icon"><i class="fas fa-arrow-right"></i></span><span class="btn-label">Voir plus</span></button>
             </div>
 
-            <div class="column is-5 pt-5 pl-6">
+
+
+            <div class="column is-5 pt-5 pl-6 responsive-padding typo_texte">
                 <figure class="image  my-4">
-                    <img class="" src="./img/site_pokemon.png" alt="site pokémon">
+                    <img class="" src="./media/image/site_pokemon.avif" alt="site pokémon">
                 </figure>
 
-                <h4 class="title is-size-2">Abyssal Vault : Une collection pokémon</h4>
-                <h5 class="subtitle mb-3">En janvier 2026, j'ai conçu, développé et déployé un site web sur la
-                    thématique de Pokémon. J’ai maîtrisé le framework CSS Bulma et j’ai renforcé mes compétences en
-                    JavaScript. </h5>
+                <h4 class="title is-size-2 typo_titre mt-4">Abyssal Vault : Une collection pokémon</h4>
+                <button class="btn-voir-plus" onclick="openModal(3)"><span class="btn-icon"><i class="fas fa-arrow-right"></i></span><span class="btn-label">Voir plus</span></button>
+            </div>
 
-                <div class="tags are-small mb-3">
-                    <span class="tag is-rounded">Développement Web</span>
+            <div class="column is-5 pt-5 pr-6 responsive-padding typo_texte">
+                <figure class="image test my-4">
+                    <img class="" src="./media/image/SAE103/maketage_V8_final.avif" alt="site pokémon">
+                </figure>
+
+                <h4 class="title is-size-2 typo_titre mt-4">Affiche : “À l’west Fest”</h4>
+                <button class="btn-voir-plus" onclick="openModal(4)"><span class="btn-icon"><i class="fas fa-arrow-right"></i></span><span class="btn-label">Voir plus</span></button>
+            </div>
+
+            <div class="column is-5 pt-5 pl-6 responsive-padding typo_texte">
+
+
+                <figure class="image test my-4">
+                    <img class="" src="./media/image/podcast.png" alt="site pokémon">
+                </figure>
+
+                <h4 class="title is-size-2 typo_titre mt-4">Art & Fact : Podcast en studio</h4>
+
+                <button class="btn-voir-plus" onclick="openModal(5)"><span class="btn-icon"><i class="fas fa-arrow-right"></i></span><span class="btn-label">Voir plus</span></button>
+            </div>
+
+            <!-- MODALE avec le script-->
+            <div class="modal-overlay" id="modalOverlay" onclick="closeModalIfOutside(event)">
+                <div class="modal-box">
+
+                    <!-- mes images -->
+                    <div class="modal-gallery">
+                        <div class="modal-gallery-inner" id="modalGallery"></div>
+                        <button class="gal-btn prev" onclick="slideGallery(-1)">&#8249;</button>
+                        <button class="gal-btn next" onclick="slideGallery(1)">&#8250;</button>
+                        <div class="gallery-dots" id="galleryDots"></div>
+                    </div>
+
+                    <!-- Contenu -->
+                    <div class="modal-body">
+                        <div class="modal-header">
+                            <button class="modal-close m-5" onclick="closeModal()"></button>
+                            <div>
+                                <h2 class="modal-title typo_titre" id="modalTitle"></h2>
+                                <p class="modal-subtitle" id="modalSubtitle"></p>
+                            </div>
+
+                        </div>
+                        <p class="modal-desc" id="modalDesc"></p>
+                        <div class="modal-techs" id="modalTechs"></div>
+                        <div class="modal-links">
+
+                            <a class="modal-link-btn primary" id="modalLive" href="#" target="_blank">Voir le projet
+                                →</a>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="subtitle">Démarche</div>
-                <p class="is-size-6 ">
-                    Création d’une planche univers<br>
-                    Choix d’un univers et réflexion des pistes graphiques<br>
-                    Validation du wireframe<br>
-                    Validation du mock-up<br>
-                    Retranscription du mock-up en code HTML/CSS<br>
-                    Déploiement sur le serveur de l’IUT de Lannion
-                </p>
-                <div class="subtitle m-3">Compétence</div>
-                <p class="is-size-6 ">
-                    Répondre à un brief
-                    conception de wireframe
-                    conception de mock-up en rapport avec l’univers graphique choisis
-                    Création de site web en HTML, CSS et Javascript
-
-                </p>
-                <div class="subtitle m-3">Bilan</div>
-                <p class="mb-6">
-                    Je suis fier d’avoir réalisé ce site web, je suis content qu’il soit plutôt responsive grâce à
-                    Bulma, mais je suis déçu de ne pas avoir eu plus de temps pour travailler la partie JavaScript. J'ai
-                    aussi appris à rendre accessible mon site via un serveur web.
-
-                </p>
             </div>
+
+
 
         </div>
     </section>
@@ -417,25 +430,256 @@
 
 
 
-    <section class="box columns" id="parcours">
+    <section class="carousel-section box" id="carousel">
+        <header class="project-header">
+            <h2 class="typo_titre">Mes photos</h2>
+            <p class="meta typo_texte">Toute Catégorie</p>
+        </header>
+        <!-- &nbsp;·&nbsp; Photographe</p> -->
+
+
+
+
+        <div class="carousel-arrows">
+            <button class="arrow-btn" id="prevBtn" aria-label="Précédent">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </button>
+            <button class="arrow-btn" id="nextBtn" aria-label="Suivant">
+                <svg viewBox="0 0 24 24">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- <div class="carousel-counter" id="counter">01 / 08</div> -->
+
+        <div class="drag-cursor" id="dragCursor">Drag</div>
+        <div class="carousel-track-outer">
+            <div class="carousel-track" id="track">
+
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1.avif" alt="Chat" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-2.avif   " alt="Paysage en montagne 1" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-3.avif   " alt="Paysage en montagne 2" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-4.avif   " alt="Paysage en montagne 3" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-5.avif   " alt="Paysage en montagne avec un casquade 1" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-6.avif   " alt="Paysage en montagne avec un casquade 2" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-7.avif   " alt="Plan rapprocher d'une vache" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-8.avif" alt="Plan large d'une vache" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-9.avif" alt="Casquade du Pont d'Espagne" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-10.avif" alt="Photo 10" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-11.avif" alt="Photo 11" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-12.avif" alt="Photo 12" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-13.avif   " alt="Photo 13" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-14.avif   " alt="Photo 14" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-15.avif   " alt="Photo 15" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-16.avif   " alt="Photo 2" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-17.avif   " alt="Photo 3" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-18.avif   " alt="Photo 4" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-19.avif   " alt="Photo 5" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-20.avif   " alt="Photo 6" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-21.avif   " alt="Photo 7" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-22.avif   " alt="Photo 8" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-23.avif   " alt="Photo 2" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-24.avif   " alt="Photo 3" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-25.avif   " alt="Photo 4" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-26.avif   " alt="Photo 5" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-27.avif   " alt="Photo 6" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-28.avif   " alt="Photo 7" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-29.avif   " alt="Photo 8" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-30.avif   " alt="Photo 2" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-31.avif   " alt="Photo 3" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-32.avif   " alt="Photo 4" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-33.avif   " alt="Photo 5" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-34.avif   " alt="Photo 6" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-35.avif   " alt="Photo 7" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-36.avif   " alt="Photo 8" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-37.avif   " alt="Photo 2" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-38.avif   " alt="Photo 3" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-39.avif   " alt="Photo 4" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-40.avif   " alt="Photo 5" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-41.avif   " alt="Photo 6" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-42.avif   " alt="Photo 7" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-43.avif   " alt="Photo 8" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-44.avif   " alt="Photo 3" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-45.avif   " alt="Photo 4" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-46.avif   " alt="Photo 5" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-47.avif   " alt="Photo 6" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-48.avif   " alt="Photo 7" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./media/img_carousel/1-49.avif   " alt="Photo 8" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="columns" id="parcours">
+
         <div class="column is-10 is-offset-1">
-            <div class="title m-4 is-size-2 is-offset-1">Mon Parcours</div>
+            <div class="title m-4 is-size-2 is-offset-1 typo_titre">Mon Parcours</div>
 
             <div class="columns">
-                <div class="column is-1 is-offset-1">
+                <div class="column is-1 is-offset-1 disparais_quand_cest_petit">
                     <div class="timeline-container">
                         <ul class="timeline">
                             <li class="dot dot1"></li>
                             <li class="dot dot2"></li>
                             <li class="dot dot3"></li>
                             <li class="dot dot2"></li>
-                            <li class="dot"></li>
+
                         </ul>
                     </div>
                 </div>
 
                 <div class="column is-11">
-                    <p class="subtitle m-4">Bachelor universitaire de technologie - Métiers du multimédia et de
+                    <p class="subtitle m-4 typo_texte">Bachelor universitaire de technologie - Métiers du multimédia et
+                        de
                         l'internet<br>
                         Depuis septembre 2025, Institut Universitaire Technologique Lannion <br><br>
 
@@ -450,8 +694,7 @@
                         Permis de conduire<br>
                         Depuis avril 2025, Cityzen Lesneven<br><br>
 
-                        PIX niveau global : avancé 1<br>
-                        Depuis mars 2025, Saint-François-Notre-Dame Lesneven
+
                     </p>
                 </div>
 
@@ -460,60 +703,61 @@
     </section>
 
 
-
-    <section class="box" id="contact">
+    <!-- image_fond -->
+    <section class=" image_fond" id="contact">
         <footer class="p-6 mt-6">
             <div class="columns">
 
-                <div class="column is-5 is-offset-1 ">
-                    <h2 class="title">CONTACTS</h2>
+                <div class="column is-5 is-offset-1">
+                    <h2 class="title typo_titre text_blanc ombre">CONTACTS</h2>
 
 
-                    <div class="ml-6">
-                        <div class="has-text-primary">
+                    <div class="ml-6 typo_texte">
+                        <div class="has-text-white ombre">
                             <span class="icon">
-                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-envelope"></i>
                             </span>
-                            <span class="title is-size-5">0758651452</span>
+                            <span class="title is-size-5 text_blanc ombre">feunteun.matheo@gmail.com</span>
                         </div>
-                        <div class="has-text-primary m-0 py-1">
+                        <div class="has-text-white ombre m-0 py-1">
                             <span class="icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </span>
-                            <span class="title is-size-5">@matheo.feunteun</span>
+                            <a href="https://www.instagram.com/matheo.feunteun/" target="_blank"
+                                class="title is-size-5 text_blanc ombre soulignage">Feunteun Mathéo</a>
                         </div>
-                        <div class="has-text-primary m-0 py-1">
+                        <div class="has-text-white ombre m-0 py-1">
                             <span class="icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </span>
                             <a href="https://linkedin.com/in/matheo-feunteun" target="_blank"
-                                class="title is-size-5">@matheo.feunteun</a>
+                                class="title is-size-5 text_blanc ombre soulignage">@matheo.feunteun</a>
                         </div>
-                        <div class="has-text-primary m-0 py-1">
+                        <div class="has-text-white ombre m-0 py-1">
                             <span class="icon">
                                 <i class="fa-solid fa-map-pin"></i>
                             </span>
-                            <span class="title is-size-5">Lannion</span>
+                            <span class="title is-size-5 text_blanc ombre">Lannion</span>
                         </div>
                     </div>
 
 
                 </div>
                 <div class="column is-fourth">
-                    <h2 class="title">Navigation</h2>
-                    <div class="ml-6">
+                    <h2 class="title typo_titre text_blanc ombre">Navigation</h2>
+                    <div class="ml-6 typo_texte">
 
-                        <div class="has-text-primary">
-                            <a href="#a_propos" class="title is-size-5">À propos</a>
+                        <div class="has-text-white ombre">
+                            <a href="#a_propos" class="title is-size-5 text_blanc ombre">À propos</a>
                         </div>
-                        <div class="has-text-primary m-0 py-1">
-                            <a href="#competences" class="title is-size-5">Compétences</a>
+                        <div class="has-text-white ombre m-0 py-1">
+                            <a href="#competences" class="title is-size-5 text_blanc ombre">Compétences</a>
                         </div>
-                        <div class="has-text-primary m-0 py-1">
-                            <a href="#projets" class="title is-size-5">Projets</a>
+                        <div class="has-text-white ombre m-0 py-1">
+                            <a href="#projets" class="title is-size-5 text_blanc ombre">Projets</a>
                         </div>
-                        <div class="has-text-primary m-0 py-1">
-                            <a href="#parcours" class="title is-size-5">Mon parcours</a>
+                        <div class="has-text-white ombre m-0 py-1">
+                            <a href="#parcours" class="title is-size-5 text_blanc ombre">Mon parcours</a>
                         </div>
                     </div>
                 </div>
@@ -522,19 +766,18 @@
                         is-justify-content-flex-end 
                         
                         is-align-items-start">
-                    <a class="button is-primary is-outlined is-rounded" href="./img/1A2-Feunteun Matheo - CV VF.pdf" target="_blank">
-                        <span class="icon">
-                            <i class="fas fa-download"></i>
+                    <a class="btn-cv btn-cv-outline" href="./media/Feunteun_Mathéo_CV.pdf" target="_blank">
+                        <span class="btn-icon">
+                            <i class="fas fa-download" style="font-size:0.75rem;"></i>
                         </span>
-                        <span>Mon CV</span>
-
+                        <span>mon CV</span>
                     </a>
                 </div>
 
             </div>
 
             <hr>
-            <p class="is-size-6 has-text-centered">
+            <p class="is-size-6 has-text-centered typo_texte text_blanc ombre">
                 © 2026 Feunteun Mathéo — Tous droits réservés</p>
 
             </div>
@@ -543,7 +786,7 @@
 
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
