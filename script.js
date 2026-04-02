@@ -370,7 +370,7 @@ const projets = [
                     suis le plus <strong>fier</strong>. Et c’est grâce à lui que j’ai <strong>envie</strong> de travailler dans les métiers de
                     <strong>l'audiovisuel !</strong> J'ai développé mes compétences en audiovisuelles et en travail d'équipe.
                 </p>`,
-    images: ["../media/image/Le_Pont_du_Diable.avif"],
+    images: ["media/image/Le_Pont_du_Diable.avif"],
     techs: ["Davinci Resolve","Stabilisateur Ronin"],
     
     live: "https://youtu.be/BNDwayE_Pic?si=wIToKjqpyqeZnF-H"
@@ -422,7 +422,7 @@ const projets = [
 
 
                 </p>`,
-    images: ["../media/image/pepite_img.avif"],
+    images: ["media/image/pepite_img.avif"],
     techs: ["Matériel audiovisuel", "Davinci Resolve"],
     live: "https://youtu.be/LdqSVCIPrcc?si=cBho8DFe_P-Hc8fG"
   },
@@ -463,7 +463,7 @@ const projets = [
                     l'écriture mais qui doit comprendre les <strong>intentions du réalisateur</strong> pour réussir au mieux son travail.
                     Ce projet a développé mes compétences en prise de sons et en montage.
                 </p>`,
-    images: ["../media/image/Bran.avif", "../media/image/Nora.avif"],
+    images: ["media/image/Bran.avif", "media/image/Nora.avif"],
     techs: ["Davinci Resolve"],
     
     live: "https://youtu.be/_ijcJfTg4ws?si=7qaTj5s0cdyNVwzf"
@@ -506,7 +506,7 @@ const projets = [
                     Bulma, mais je suis déçu de ne pas avoir eu plus de temps pour travailler la partie <strong>JavaScript</strong>. J'ai
                     aussi appris à rendre <strong>accessible mon site via un serveur web</strong>.
                 </p>`,
-    images: ["../media/image/pokemon_2.avif", "../media/image/site_pokemon.avif", "../media/image/pokemon_1.avif"],
+    images: ["media/image/pokemon_2.avif", "media/image/site_pokemon.avif", "media/image/pokemon_1.avif"],
     techs: ["Figma","Visual Studio Code","HTML", "CSS", "JavaScript", "Bulma"],
     
     live: "https://matheo2904.github.io/Site_Pokemon/"
@@ -542,7 +542,7 @@ const projets = [
                      Et j’ai aussi beaucoup travaillé la <strong>typographie</strong> qui doit bien correspondre à l’essence du festival.
                       Je suis fier de mon travail.
                 </p>`,
-    images: ["../media/image/SAE103/maketage_V8_final.avif", "../media/image/SAE103/maketagev1.avif", "../media/image/SAE103/maketageV2.avif", "../media/image/SAE103/maketageV4.avif", "../media/image/SAE103/maketageV6_1.avif", "../media/image/SAE103/maketageV7_1.avif",],
+    images: ["media/image/SAE103/maketage_V8_final.avif", "media/image/SAE103/maketagev1.avif", "media/image/SAE103/maketageV2.avif", "media/image/SAE103/maketageV4.avif", "media/image/SAE103/maketageV6_1.avif", "media/image/SAE103/maketageV7_1.avif",],
     techs: ["Adobe Photoshop"],
    
 
@@ -585,7 +585,7 @@ const projets = [
                      J’ai apprécié l'expérience d'être plongé dans l'émission malgré quelques appréhensions au début.
 
                 </p>`,
-    images: ["../media/image/podcast.png"],
+    images: ["media/image/podcast.png"],
     techs: ["Google Docs", "Supernova"],
     
     live: "https://youtu.be/6v9C2QARY0U?si=0w7svOq5MByNHvxs"
