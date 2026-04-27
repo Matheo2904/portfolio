@@ -67,6 +67,18 @@
   font-size: 3rem;
 }
 
+@media (min-width: 300px) {
+  .tres_gros_text {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 410px) {
+  .tres_gros_text {
+    font-size: 2.8rem;
+  }
+}
+
 @media (min-width: 600px) {
   .tres_gros_text {
     font-size: 3rem;
@@ -391,14 +403,28 @@ body {
 
 /* Media queries adaptatifs pour .hero-profile */
 
-@media (max-width: 460px) {
+@media (max-width: 350px) {
+  .hero-profile {
+    max-height: 280px !important;
+    max-width: 210px !important;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+  .hero-profile {
+    max-height: 300px !important;
+    max-width: 230px !important;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 460px) {
   .hero-profile {
     max-height: 350px !important;
     max-width: 280px !important;
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 460px) and (max-width: 768px) {
   .hero-profile {
     max-height: 450px !important;
     max-width: 350px !important;
